@@ -21,6 +21,10 @@ def calculo_fatoracao(fatorar, controle):
                 fatorar = fatorar / numeros_primos[index]
     return fatorado
 
+print('\n\n\n')
+print('**************************************************')
+print('*** VAMOS ESTUDAR FATURAÇÃO POR NÚMEROS PRIMOS ***')
+print('**************************************************\n')
 numeros_primos = criar_lista_numeros_primos()
 fatorar = int(input('Digite um número positivo para fatorarmos: '))
 if (fatorar <= 0):
@@ -29,7 +33,7 @@ controle = fatorar
 resultado = calculo_fatoracao(fatorar, controle)
 resultado.sort()
 
-print('\n\n\n\n\n\n')
+print('\n')
 print(f'Você pediu para fatorar o número: {controle}')
 print(f'E o resultado foi: {resultado}')
 print('\n\n\n')
